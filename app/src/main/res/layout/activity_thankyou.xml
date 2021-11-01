@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_text_center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/img_thankyou"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/thankyou"/>
+
+        <com.autotechsolutions.CustomView.CustomTextView
+            android:id="@+id/txt_thankyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_thankyou"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/textColorGrey"
+            android:layout_marginRight="30dp"
+            app:customFont="@string/text_font"
+            android:layout_marginTop="50dp"
+            android:text="Thank you for booking with us. Our representative will call you shortly for further assistance."
+            android:gravity="center"/>
+
+        <com.autotechsolutions.CustomView.CustomButton
+            android:id="@+id/btn_thankyou"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_round_shape"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:customFont="@string/text_font"
+            android:layout_below="@+id/txt_thankyou"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

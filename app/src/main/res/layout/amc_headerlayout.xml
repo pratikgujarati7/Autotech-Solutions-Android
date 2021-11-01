@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/lin_expand"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+        <com.autotechsolutions.CustomView.CustomTextView
+            android:id="@+id/txt_listtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01. AMC"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:customFont="@string/text_font_bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rel_expand"
+        android:paddingRight="5dp">
+        <com.autotechsolutions.CustomView.CustomTextView
+            android:id="@+id/txt_discountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01. AMC"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:customFont="@string/text_font" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/img_expandList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"/>
+    </RelativeLayout>
+</RelativeLayout>

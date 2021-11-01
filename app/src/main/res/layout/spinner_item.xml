@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autotechsolutions.CustomView.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="16sp"
+    android:gravity="left"
+    android:textColor="@color/colorPrimary"
+    android:padding="5dip"
+    android:singleLine="true"
+    app:customFont="@string/text_font" />

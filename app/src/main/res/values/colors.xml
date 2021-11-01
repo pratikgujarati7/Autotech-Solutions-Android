@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c02135</color>
+    <color name="colorPrimaryhint">#80c02135</color>
+    <color name="colorPrimaryDark">#890616</color>
+    <color name="colorAccent">#ae5e67</color>
+    <color name="themecolor">#a1d57a</color>
+    <color name="startGradient">#2478F2</color>
+    <color name="endGradient">#2DDD88</color>
+    <color name="centerGradient">#29A7BD</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFC107</color>
+    <color name="hintwhite">#80ffffff</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#393184</color>
+    <color name="textColorGrey">#434343</color>
+    <color name="loginBtnBg">#91AB00</color>
+    <color name="loginBtnBgdark">#677805</color>
+    <color name="signUpBtnBg">#077BA0</color>
+    <color name="fbBg">#3D5998</color>
+    <color name="googleBg">#eb3800</color>
+    <color name="lightBlue">#08B6F2</color>
+    <color name="buttonBottomBorder">#312d5c</color>
+    <color name="acceptStatus">#ED008C</color>
+    <color name="openStatus">#91AB00</color>
+    <color name="offerStatus">#08B6F2</color>
+    <color name="completeStatus">#434343</color>
+    <color name="cancelStatus">#e10303</color>
+    <color name="orange">#ff550a</color>
+    <color name="lightGrey">#bdbdbd</color>
+    <color name="lighterGrey">#d3d3d3</color>
+    <color name="bglighteGrey">#f2f2f2</color>
+    <color name="smokyWhite">#f6f6f6</color>
+    <color name="bg_row_background">#fa315b</color>
+    <color name="green">#00CC49</color>
+    <color name="gray">#898989</color>
+</resources>

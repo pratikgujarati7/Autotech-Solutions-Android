@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_drawer_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_my_cars"
+        android:icon="@drawable/ic_drawer_mycar"
+        android:title="My Cars" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_drawer_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_addressbook"
+        android:icon="@drawable/addressbook"
+        android:title="My Address Book" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/ic_drawer_notification"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/nav_refer"
+        android:icon="@drawable/ic_drawer_referearn"
+        android:title="Refer and Earn" />
+    <item
+        android:id="@+id/nav_terms"
+        android:icon="@drawable/ic_drawer_terms"
+        android:title="Terms &amp; Conditions" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_drawer_about_us"
+        android:title="About us" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_drawer_logout"
+        android:title="Logout" />
+
+</menu>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="@drawable/bg_mycar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.10"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <com.autotechsolutions.CustomView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Explore the power of"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            app:customFont="@string/text_font" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <com.autotechsolutions.CustomView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MITSUBISHI MOTORS"
+                            android:textColor="@color/white"
+                            android:textSize="28dp"
+                            app:customFont="@string/text_font_bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <com.autotechsolutions.CustomView.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="with SINHA CARS PVT. LTD."
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            app:customFont="@string/text_font" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/smokyWhite" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.10"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.30">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50">
+
+                        <LinearLayout
+                            android:id="@+id/lin_carList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.90">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_list" />
+
+                                    <com.autotechsolutions.CustomView.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="My Car List"
+                                        android:textColor="@color/white"
+                                        app:customFont="@string/text_font" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.10">
+
+                                <View
+                                    android:id="@+id/view_carList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/smokyWhite" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/smokyWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50">
+
+                        <LinearLayout
+                            android:id="@+id/lin_addNewCar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.90">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_addcar" />
+
+                                    <com.autotechsolutions.CustomView.CustomTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="Add New Car"
+                                        android:textColor="@color/white"
+                                        app:customFont="@string/text_font" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.10">
+
+                                <View
+                                    android:id="@+id/view_addNewcar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/smokyWhite"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55">
+
+        <!--MY CAR LIST-->
+        <LinearLayout
+            android:id="@+id/lin_myCarListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Your Car List"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        app:customFont="@string/text_font" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.80">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_carlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <!--ADD NEW CAR-->
+        <LinearLayout
+            android:id="@+id/lin_addNewCarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Fill your Car Detail"
+                        android:textColor="@color/black"
+                        android:textSize="22dp"
+                        app:customFont="@string/text_font" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.80"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <com.autotechsolutions.CustomView.CustomTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Choose Car Make"
+                                        android:textColor="@color/black"
+                                        app:customFont="@string/text_font" />
+
+                                    <Spinner
+                                        android:id="@+id/spinner_carCompany"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center_vertical" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <com.autotechsolutions.CustomView.CustomTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Choose Car Model"
+                                        android:textColor="@color/black"
+                                        app:customFont="@string/text_font" />
+
+                                    <Spinner
+                                        android:id="@+id/spinner_carModel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="5dp"
+                                        android:gravity="center_vertical" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.30">
+                                        <com.autotechsolutions.CustomView.CustomTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Registration Number"
+                                            android:textColor="@color/black"
+                                            app:customFont="@string/text_font" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.70"
+                                        android:layout_margin="5dp">
+
+                                        <me.philio.pinentry.PinEntryView
+                                            android:id="@+id/entry_registerNumberone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:numDigits="2"
+                                            app:pinInputType="text"
+                                            app:accentType="all"
+                                            app:accentWidth="1dp"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@android:color/transparent"
+                                            app:digitBackground="@drawable/edt_round_shape"
+                                            app:digitTextColor="@color/black"
+                                            app:digitTextSize="7dp"
+                                            app:mask=""
+                                            app:digitWidth="25dp"
+                                            app:digitHeight="40dp"
+                                            app:digitSpacing="7dp"
+                                            app:pinAccentColor="@android:color/transparent" />
+
+                                        <me.philio.pinentry.PinEntryView
+                                            android:id="@+id/entry_registerNumbertwo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:numDigits="2"
+                                            android:layout_toRightOf="@+id/entry_registerNumberone"
+                                            app:pinInputType="number"
+                                            app:accentType="all"
+                                            android:layout_marginLeft="10dp"
+                                            app:accentWidth="1dp"
+                                            android:background="@android:color/transparent"
+                                            app:digitBackground="@drawable/edt_round_shape"
+                                            app:digitTextColor="@color/black"
+                                            app:digitTextSize="7dp"
+                                            app:mask=""
+                                            app:digitWidth="25dp"
+                                            app:digitHeight="40dp"
+                                            app:digitSpacing="7dp"
+                                            app:pinAccentColor="@android:color/transparent" />
+
+                                        <me.philio.pinentry.PinEntryView
+                                            android:id="@+id/entry_registerNumberthree"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:numDigits="2"
+                                            android:layout_toRightOf="@+id/entry_registerNumbertwo"
+                                            app:pinInputType="text"
+                                            app:accentType="all"
+                                            android:layout_marginLeft="10dp"
+                                            app:accentWidth="1dp"
+                                            android:background="@android:color/transparent"
+                                            app:digitBackground="@drawable/edt_round_shape"
+                                            app:digitTextColor="@color/black"
+                                            app:digitTextSize="7dp"
+                                            app:mask=""
+                                            app:digitWidth="25dp"
+                                            app:digitHeight="40dp"
+                                            app:digitSpacing="7dp"
+                                            app:pinAccentColor="@android:color/transparent" />
+
+                                        <me.philio.pinentry.PinEntryView
+                                            android:id="@+id/entry_registerNumberfour"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:numDigits="4"
+                                            android:layout_toRightOf="@+id/entry_registerNumberthree"
+                                            app:pinInputType="number"
+                                            app:accentType="all"
+                                            android:layout_marginLeft="10dp"
+                                            app:accentWidth="1dp"
+                                            android:background="@android:color/transparent"
+                                            app:digitBackground="@drawable/edt_round_shape"
+                                            app:digitTextColor="@color/black"
+                                            app:digitTextSize="7dp"
+                                            app:mask=""
+                                            app:digitWidth="25dp"
+                                            app:digitHeight="40dp"
+                                            app:digitSpacing="7dp"
+                                            app:pinAccentColor="@android:color/transparent" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.30">
+                                        <com.autotechsolutions.CustomView.CustomTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Choose Fuel Type"
+                                            android:textColor="@color/black"
+                                            app:customFont="@string/text_font" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.70">
+
+                                        <Spinner
+                                            android:id="@+id/spinner_fuletype"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="5dp"
+                                            android:entries="@array/array_fule"
+                                            android:gravity="center_vertical" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+
+                                <com.autotechsolutions.CustomView.CustomButton
+                                    android:id="@+id/btn_saveCar"
+                                    android:layout_width="150dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="30dp"
+                                    android:background="@drawable/btn_round_shape"
+                                    android:text="Save Car"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    app:customFont="@string/text_font" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

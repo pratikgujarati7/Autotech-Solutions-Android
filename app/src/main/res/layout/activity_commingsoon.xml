@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_text_center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/img_comingsoon"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_coming_soon"/>
+
+        <com.autotechsolutions.CustomView.CustomTextView
+            android:id="@+id/txt_comingsoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_comingsoon"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textColor="@color/textColorGrey"
+            android:layout_marginRight="30dp"
+            app:customFont="@string/text_font"
+            android:layout_marginTop="50dp"
+            android:text="We are planning great care for your Car. COMING SOON with best Car Care Products."
+            android:gravity="center"/>
+
+        <com.autotechsolutions.CustomView.CustomButton
+            android:id="@+id/btn_comingsoon"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_round_shape"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:customFont="@string/text_font"
+            android:layout_below="@+id/txt_comingsoon"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "370240182372",
+    "firebase_url": "https://autotechsolution-ee43d.firebaseio.com",
+    "project_id": "autotechsolution-ee43d",
+    "storage_bucket": "autotechsolution-ee43d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370240182372:android:0a4e81bfa4d0389a",
+        "android_client_info": {
+          "package_name": "com.autotechsolutions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370240182372-kosuf4mcgv15p7813bdeht9vac2kkguc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autotechsolutions",
+            "certificate_hash": "c5ed8002590ba29379da8f4fe9dc3c425c572ec3"
+          }
+        },
+        {
+          "client_id": "370240182372-jc8gi0eqqbnh714snfo2ulqhjcmh35s6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autotechsolutions",
+            "certificate_hash": "0f41ce0a5af321c524dfa5a5e03f443d55ed29fe"
+          }
+        },
+        {
+          "client_id": "370240182372-pd2qh136atjmgsd10230ofo3hoqfs95q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autotechsolutions",
+            "certificate_hash": "606afa75b907bf2241bc653d8314323e1b6b3d04"
+          }
+        },
+        {
+          "client_id": "370240182372-26lhopapqa7bqn1kpbej1l5nvsulbnsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autotechsolutions",
+            "certificate_hash": "1a3297789be6e8bacb806e67454513a0a0e0a39e"
+          }
+        },
+        {
+          "client_id": "370240182372-episihq0sdlpds4p8hrrd90n6vemafsm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA1gtC-3F2U5Gn9hQ2MR-fntkroUYCGiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370240182372-episihq0sdlpds4p8hrrd90n6vemafsm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

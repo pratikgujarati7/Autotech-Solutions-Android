@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_referaearn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite your friends and"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:customFont="@string/text_font" />
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EARN MONEY"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        app:customFont="@string/text_font_bold" />
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Share your referral link and invite yours friend via SMS/ Email/ Whatsapp. You earn upto Rs. 5000."
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:customFont="@string/text_font" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_chat" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_refer">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.50">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_invite"/>
+                            <View
+                                android:layout_width="60dp"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/smokyWhite"
+                                android:layout_gravity="center_vertical"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_product"/>
+                            <View
+                                android:layout_width="60dp"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/smokyWhite"
+                                android:layout_gravity="center_vertical"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_wincase"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.50">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Invite your friend to sign up"
+                                    android:layout_marginTop="2dp"
+                                    android:textSize="12dp"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/smokyWhite"
+                                    app:customFont="@string/text_font" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Your friend get a product from us"
+                                    android:layout_marginTop="2dp"
+                                    android:textSize="12dp"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/smokyWhite"
+                                    app:customFont="@string/text_font" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="You both get reward"
+                                    android:layout_marginTop="2dp"
+                                    android:textSize="12dp"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/smokyWhite"
+                                    app:customFont="@string/text_font" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="YOUR REFERRAL CODE"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        app:customFont="@string/text_font" />
+
+                    <!--<com.autotechsolutions.CustomView.CustomEditText-->
+                        <!--android:id="@+id/edt_LocationAddress"-->
+                        <!--android:layout_width="200dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:hint="Reffral code"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--app:customFont="@string/text_font"-->
+                        <!--android:background="@android:color/transparent"/>-->
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:id="@+id/txt_refferalCode"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:hint="YOUR REFERRAL CODE"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:background="@drawable/bg_refferallabel"
+                        app:customFont="@string/text_font" />
+
+
+                    <com.autotechsolutions.CustomView.CustomButton
+                        android:id="@+id/btn_reffernow"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_round_shape"
+                        android:text="Refer Now"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:customFont="@string/text_font" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

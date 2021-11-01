@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9.0"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_text_center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginRight="@dimen/album_dp_10"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:orientation="vertical">
+
+            <!--<com.autotechsolutions.CustomView.CustomTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Reachability"-->
+            <!--android:textColor="@color/black"-->
+            <!--app:customFont="@string/text_font" />-->
+
+            <RadioGroup
+                android:id="@+id/radioGrp_buyacar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/radioBtn_newcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:text="New"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/radiobtn_preowned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.5"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:text="Preowned"
+                    android:textSize="18dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.autotechsolutions.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Budget "
+                android:textColor="@color/black"
+                app:customFont="@string/text_font" />
+
+            <com.autotechsolutions.CustomView.CustomEditText
+                android:id="@+id/edt_LocationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:hint="Enter budget"
+                android:textColor="@color/colorPrimary"
+                app:customFont="@string/text_font" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.autotechsolutions.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transmission Type"
+                android:textColor="@color/black"
+                app:customFont="@string/text_font" />
+
+            <Spinner
+                android:id="@+id/spinner_transmission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.autotechsolutions.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type of body "
+                android:textColor="@color/black"
+                app:customFont="@string/text_font" />
+
+            <Spinner
+                android:id="@+id/spinner_typeofbody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.autotechsolutions.CustomView.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fuel Type "
+                android:textColor="@color/black"
+                app:customFont="@string/text_font" />
+
+            <Spinner
+                android:id="@+id/spinner_fueltype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.autotechsolutions.CustomView.CustomButton
+                android:id="@+id/btn_getquote"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_round_shape"
+                android:text="Get Quote "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:customFont="@string/text_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

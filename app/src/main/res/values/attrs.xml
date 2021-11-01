@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="fontAssetName" format="string"/>
+    </declare-styleable>
+
+    <!--Custom textview attributes-->
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string" />
+        <attr name="kv_spacing" format="float" />
+    </declare-styleable>
+
+    <!--Custom progressbar attributes-->
+    <declare-styleable name="ProgressBarCustom">
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<com.autotechsolutions.CustomView.CustomTextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="Registration"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="20dp"-->
+                    <!--app:customFont="@string/text_font" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp">-->
+                <!--<com.autotechsolutions.CustomView.CustomTextView-->
+                    <!--android:id="@+id/txt_registration"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/aboutus_part_1"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="16dp"-->
+                    <!--app:customFont="@string/text_font" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<com.autotechsolutions.CustomView.CustomTextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="General Rules"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="20dp"-->
+                    <!--app:customFont="@string/text_font" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp">-->
+                <!--<com.autotechsolutions.CustomView.CustomTextView-->
+                    <!--android:id="@+id/txt_rules"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/aboutus_part_2"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="16dp"-->
+                    <!--app:customFont="@string/text_font" />-->
+            <!--</RelativeLayout>-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

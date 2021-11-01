@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="@drawable/bg_bshop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar_text_center" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.60"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        app:customFont="@string/text_font" />
+
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bodyshop"
+                        android:textColor="@color/black"
+                        android:textSize="28dp"
+                        app:customFont="@string/text_font_bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.20">
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pick Photo"
+                                    android:textColor="@color/black"
+                                    app:customFont="@string/text_font" />
+                                <ImageView
+                                    android:id="@+id/img_AddPhoto"
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_addphoto"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="5dp"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.80"
+                                android:padding="2dp">
+                                <!--<android.support.v7.widget.RecyclerView-->
+                                    <!--android:id="@+id/recyclerview_carPhoto"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:visibility="gone"/>-->
+                                <com.autotechsolutions.CustomView.EmptyRecyclerView
+                                    android:id="@+id/recyclerview_carPhoto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"/>
+
+                               <ImageView
+                                   android:id="@+id/img_addPhotoView"
+                                   android:layout_width="90dp"
+                                   android:layout_height="90dp"
+                                   android:layout_centerVertical="true"
+                                   android:background="@drawable/no_photo"
+                                   android:backgroundTint="@color/lightGrey"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.autotechsolutions.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Choose Your Car"
+                                android:textColor="@color/black"
+                                app:customFont="@string/text_font" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <Spinner
+                                    android:id="@+id/spinner_car"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1" />
+                                <ImageView
+                                    android:id="@+id/img_Addcar"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="9"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_addphoto"
+                                    android:padding="10dp"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <com.autotechsolutions.CustomView.CustomTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Choose Your Branch"
+                                android:textColor="@color/black"
+                                app:customFont="@string/text_font" />
+
+                            <Spinner
+                                android:id="@+id/spinner_branch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+
+                    <!--SERVICE DATE-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.40">
+
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Service Date"
+                                    android:textColor="@color/black"
+                                    app:customFont="@string/text_font" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.60">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.80">
+
+                                        <com.autotechsolutions.CustomView.CustomTextView
+                                            android:id="@+id/txt_serviceDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:text="09 - Dec - 2018"
+                                            android:textColor="@color/colorPrimary"
+                                            app:customFont="@string/text_font" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.20">
+
+                                        <ImageView
+                                            android:id="@+id/img_DatePick"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:padding="8dp"
+                                            android:src="@drawable/ic_calendar" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_claimnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.40">
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Claim No. (Optional)"
+                                    android:textColor="@color/black"
+                                    app:customFont="@string/text_font" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.60">
+                                <EditText
+                                    android:id="@+id/edt_claimNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent"
+                                    android:hint="39587456"
+                                    android:gravity="center_vertical"
+                                    android:textColorHint="@color/colorPrimaryhint"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/view_claimnumber"
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="visible"
+                        android:background="@color/colorPrimary" />
+                    <com.autotechsolutions.CustomView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you have already claimed,Please add your claim number"
+                        android:textColor="@color/black"
+                        android:textSize="11dp"
+                        android:gravity="center"
+                        app:customFont="@string/text_font" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.40">
+
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="Reachability"
+                                    android:textColor="@color/black"
+                                    app:customFont="@string/text_font" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.60">
+
+                                <RadioGroup
+                                    android:id="@+id/radioGrp_reachability"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <RadioButton
+                                        android:id="@+id/radioBtn_selfDriven"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="0.5"
+                                        android:checked="false"
+                                        android:buttonTint="@color/colorPrimary"
+                                        android:text="Self Driven"
+                                        android:textSize="18dp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radiobtn_pickUp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_weight="0.5"
+                                        android:checked="true"
+                                        android:text="Pick-up/Drop"
+                                        android:buttonTint="@color/colorPrimary"
+                                        android:textSize="18dp" />
+                                </RadioGroup>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_pickup"
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+
+                    <RelativeLayout
+                        android:id="@+id/rel_timepick"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.40">
+
+                                <com.autotechsolutions.CustomView.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pickup Time"
+                                    android:textColor="@color/black"
+                                    app:customFont="@string/text_font" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.60">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.80">
+
+                                        <com.autotechsolutions.CustomView.CustomTextView
+                                            android:id="@+id/txt_pickuptime"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:text="10:00 AM"
+                                            android:textColor="@color/colorPrimary"
+                                            app:customFont="@string/text_font" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.20">
+
+                                        <ImageView
+                                            android:id="@+id/img_timePick"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerInParent="true"
+                                            android:padding="8dp"
+                                            android:src="@drawable/icon_image" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/view_selfdriven"
+                        android:layout_width="30dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_viewPickupAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp">
+
+                            <com.autotechsolutions.CustomView.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Location (Address)"
+                                android:textColor="@color/black"
+                                app:customFont="@string/text_font" />
+
+                            <ImageView
+                                android:id="@+id/img_address"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_toLeftOf="@+id/img_locationFinder"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/addressbook" />
+
+                            <ImageView
+                                android:id="@+id/img_locationFinder"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="20dp"
+                                android:padding="5dp"
+                                android:src="@drawable/ic_locationblack" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.autotechsolutions.CustomView.CustomEditText
+                                android:id="@+id/edt_LocationAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/colorPrimary"
+                                app:customFont="@string/text_font"
+                                android:background="@android:color/transparent"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/colorPrimary" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <com.autotechsolutions.CustomView.CustomButton
+                            android:id="@+id/btn_bookService"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/btn_round_shape"
+                            android:text="Book Body Shop"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:customFont="@string/text_font" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
